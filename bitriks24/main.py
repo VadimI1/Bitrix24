@@ -29,7 +29,7 @@ list = []
 for i in deal_order:
     for j in deal_client:
         if i["CONTACT_ID"] == deal_client[str(j)]["ID"]:
-            list.append([deal_client[str(j)]["SECOND_NAME"] + " " + deal_client[str(j)]["NAME"] + " " + deal_client[str(j)]["LAST_NAME"],
+            list.append([deal_client[str(j)]["LAST_NAME"] + " " + deal_client[str(j)]["NAME"] + " " + deal_client[str(j)]["SECOND_NAME"],
                          deal_client[str(j)]["PHONE"][0]["VALUE"], i["COMMENTS"]])
 
 
